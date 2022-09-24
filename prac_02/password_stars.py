@@ -8,11 +8,11 @@ and then print stars equal to the password length
 def main():
     """Password Stars Program"""
     minimum_password_length = 8
-    password = valid_password(minimum_password_length)
+    password = get_password(minimum_password_length)
     print_password_stars(password)
 
 
-def valid_password(minimum_password_length):
+def get_password(minimum_password_length):
     """Get a valid password with a minimum required length"""
     password = input("Password: ")
     while len(password) < minimum_password_length:
